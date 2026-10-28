@@ -1,0 +1,13 @@
+version: "1.0"
+projectName: Kvv_2810AWSPPProject
+runtimes:
+- runtimeAlias: kvv_2810AWSPP
+  assets:
+  - name: fld_1803295998_stage00.projects.fl1cbc636fcedc4d204f1fa6.integrations:tppfcs
+    type: flow
+    stepId: /0
+    reference: fld_1803295998_stage00.projects.fl1cbc636fcedc4d204f1fa6.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
+  - name: fld_1803295998_stage00.projects.fl1cbc636fcedc4d204f1fa6.integrations:tppfcs
+    type: flow
+    stepId: /1
+    reference: fld_1803295998_stage00.projects.fl1cbc636fcedc4d204f1fa6.WmPackageServiceProvider.SIQAJDBCAdapterTests.adapterServices:getData
