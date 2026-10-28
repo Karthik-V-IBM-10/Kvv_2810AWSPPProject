@@ -7,18 +7,76 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mssql
+  packages:
+  - name: Kvv_2810AWSPPProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.driverType
+  : Progress® DataDirect®
+  jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.trustStore
+  : ""
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.startupRetryCount
+  : "0"
+  jdbc.jdbcTestPool.maxConns: "10"
+  jdbc.jdbcTestPool.userid: root
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.user
+  : sa
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.minimumPoolSize
+  : "1"
+  jdbc.jdbcTestPool.spyenabled: "false"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.heartBeatInterval
+  : "0"
+  jdbc.jdbcTestPool.snoopenabled: "false"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionEnabled
+  : "false"
+  jdbc.jdbcTestPool.spyparms: SpyAttributes=(log=(file)logs/spy/jdbcTestPool.log;logTName=yes;timestamp=yes)
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.blockingTimeout
+  : "1000"
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
   jdbc.jdbcTestPool.expireTime: "60000"
-  jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
-  jdbc.jdbcTestPool.maxConns: "10"
-  jdbc.jdbcTestPool.userid: root
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.password
+  : "{AES}X4QCAWgjWkTdMQvFA5XaqGmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.serverName
+  : 9.60.195.99
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.keyStore
+  : ""
   jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
-  jdbc.jdbcTestPool.spyenabled: "false"
-  jdbc.jdbcTestPool.snoopenabled: "false"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.databaseName
+  : SIQACloud
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.expireTimeout
+  : "1000"
   jdbc.jdbcTestPool.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
-  jdbc.jdbcTestPool.spyparms: SpyAttributes=(log=(file)logs/spy/jdbcTestPool.log;logTName=yes;timestamp=yes)
   jdbc.jdbcTestPool.dbURL: jdbc:mysql://mysql.test.local:3306/webm
   jdbc.jdbcTestPool.poolThreshold: "0"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
   jdbc.jdbcTestPool.useSSL: "false"
+  ? artConnection.Kvv_2810AWSPPProject.project.kvv_2810awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.poolable
+  : "false"
